@@ -1,19 +1,20 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Matrix from '../assets/Matrix.avif';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+
 const HomePage = () => {
   return (
     <>
-      <div className='grid-container'>
-        <div className='center-content'>
-          <img
-            src={Matrix}
-            alt='Matrix'
-            width='900px'
-            height='500px'
-            className='image-fluid transparent-image'
-          />
-          <div>
+      <div className='container-fluid'>
+        <div className='row align-items-center'>
+          <div className='col-lg-6 center-content text-center d-flex'>
+            <img
+              src={Matrix}
+              alt='Matrix'
+              className='img-fluid transparent-image'
+            />
+          </div>
+          <div className='col-lg-6 center-content text-center'>
             <p className='overlay-text'>Seamless experience</p>
             <h3 className='overlay-texts' style={{ color: 'black' }}>
               Unleashing the Next
@@ -27,11 +28,11 @@ const HomePage = () => {
               labore et dolore magna aliqua. Ut enim ad minim veniam, quis
               nostrud
             </h6>
+            <button className='btn btn-custom'>
+              Unlock your Card <FontAwesomeIcon icon={faArrowRight} />
+            </button>
+            <p className='btn-sub-text'>*No credit card required</p>
           </div>
-          <button className='btn-custom'>
-            Unlock your Card <FontAwesomeIcon icon={faArrowRight} />
-          </button>
-          <p className='btn-sub-text'>*No credit card required</p>
         </div>
       </div>
     </>

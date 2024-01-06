@@ -46,39 +46,30 @@
   font-weight: 500;
 }
 
-.grid-container {
-  display: grid;
-}
-
-.grid-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  opacity: 2px;
-}
-
-.center-content {
+/* .center-content {
   text-align: center;
 }
 
 .transparent-image {
-  opacity: 0.4; /* Adjust the opacity as needed (0 to 1) */
+  position: absolute;
+  top: 28%;
+  height: 75vh;
+  right: 20%;
+  opacity: 0.4;
 }
 
 .overlay-text {
   position: absolute;
-  top: 30%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: purple;
-  font-size: 15px; /* Adjust font size */
+  font-size: 15px;
 }
 
 .overlay-texts {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 62%;
   transform: translate(-50%, -50%);
   font-size: 60px;
   font-weight: 700;
@@ -87,15 +78,15 @@
 
 .overlay-sub {
   position: absolute;
-  top: 72.5%;
+  top: 86%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white; /* Adjust text color */
+  color: white;
 }
 
 .btn-custom {
   position: absolute;
-  top: 103%;
+  top: 100%;
   left: 50%;
   width: 200px;
   height: 50px;
@@ -108,7 +99,109 @@
 
 .btn-sub-text {
   position: absolute;
-  top: 109%;
+  top: 110%;
   left: 43.5%;
   text-align: center;
+} */
+
+.center-content {
+  text-align: center;
 }
+
+.transparent-image {
+  width: 100%;
+  width: 500%;
+  opacity: 0.2;
+  margin-left: 400px;
+  margin-top: 90px;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: purple;
+  font-size: 15px;
+}
+
+.overlay-texts {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.overlay-sub {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: black; /* Adjust text color */
+}
+
+.btn-custom {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 200px;
+  height: 50px;
+  border-radius: 15px;
+  background-color: rgb(110, 75, 110);
+  color: white;
+  border: none;
+}
+
+.btn-sub-text {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
+}
+
+/* Brand Scrolls */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+  padding: 10px;
+  padding-inline: 10px;
+}
+.slider {
+  margin-top: 200px;
+  margin: auto;
+  overflow: visible;
+}
+.slider ul {
+  display: flex;
+  padding: 0;
+  animation: cambio 80s infinite linear;
+}
+.slider li {
+  padding: 0 10px;
+  list-style: none;
+}
+.slider img {
+  max-width: 100%;
+  height: auto;
+}
+
+.brand-image {
+  display: block;
+  margin: 10px auto;
+  width: 200px;
+}
+/* @keyframes cambio {
+  from {
+    margin-left: 0%;
+  }
+  to {
+    margin-left: -100%;
+  }
+} */
