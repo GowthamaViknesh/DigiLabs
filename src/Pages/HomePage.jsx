@@ -7,11 +7,11 @@ const HomePage = () => {
     <div className='container-fluid'>
       <div className='row align-items-center'>
         <div className='col-lg-6 center-content text-center order-2 order-lg-1'>
-          {/* <img
+          <img
             src={Matrix}
             alt='Matrix'
             className='img-fluid transparent-image'
-          /> */}
+          />
         </div>
         <div className='col-lg-6 center-content text-center order-1 order-lg-2'>
           <p className='overlay-text mt-5'>Seamless experience</p>
