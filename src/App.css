@@ -46,66 +46,6 @@
   font-weight: 500;
 }
 
-/* .center-content {
-  text-align: center;
-}
-
-.transparent-image {
-  width: 100%;
-  width: 500%;
-  opacity: 0.2;
-  margin-left: 400px;
-  margin-top: 90px;
-}
-
-.overlay-text {
-  position: absolute;
-  top: 25%;
-  left: 50%;
-  transform: translate(-50%, 0);
-  color: purple;
-  font-size: 15px;
-}
-
-.overlay-texts {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, 0);
-  font-size: 60px;
-  font-weight: 700;
-  letter-spacing: 3px;
-}
-
-.overlay-sub {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 0);
-  color: black;
-}
-
-.btn-custom {
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, 0);
-  width: 200px;
-  height: 50px;
-  border-radius: 15px;
-  background-color: rgb(110, 75, 110);
-  color: white;
-  border: none;
-}
-
-.btn-sub-text {
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, 0);
-  text-align: center;
-} */
-
 /* Brand Scrolls */
 .container {
   display: flex;
@@ -158,6 +98,7 @@
   height: 8vh;
   border-radius: 12px;
   margin-right: 16px;
+  color: white;
 }
 
 .bg-footer {
@@ -231,11 +172,13 @@
 }
 
 .btn-card:hover {
-  background-color: #582066;
+  background-color: #582564;
+  color: white;
 }
 
 .btn-cards:hover {
   background-color: #582066;
+  color: white;
 }
 
 .containerss {
@@ -302,6 +245,34 @@
   background-color: rgb(110, 75, 110);
   color: white;
   border: none;
+  background: #b621fe;
+  border: none;
+  z-index: 1;
+}
+
+.btn:after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #4a4755;
+  border-radius: 15px;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  color: #fff;
+}
+.btn:hover:after {
+  left: 0;
+  width: 100%;
+}
+.btn:active {
+  top: 2px;
 }
 
 .btn-sub-text {
@@ -314,6 +285,9 @@
 
 /* Media Query for Small Devices */
 @media (max-width: 576px) {
+  .container {
+    margin-top: 20%;
+  }
   .overlay-texts {
     margin-top: 60px;
     font-size: 40px;
@@ -327,10 +301,14 @@
     top: 120%;
   }
   .btn-custom {
-    top: 108%;
+    top: 110%;
   }
   .Image-container {
-    margin-top: 120%;
+    top: 250%;
+  }
+  .slider {
+    top: 20%;
+    margin-top: 150%;
   }
 
   .overlay-sub {
