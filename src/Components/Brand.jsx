@@ -11,44 +11,32 @@ import Image10 from '../assets/Image10.png';
 
 const Brand = () => {
   return (
-    <>
-      <div className='conatiner'>
-        <div className='slider'>
-          <ul style={{ marginTop: '100px' }}>
-            <li>
-              <img src={Image1} alt='' className='brand-image' />
+    <div className='Image-container' style={{ marginTop: '45%' }}>
+      <div className='slider'>
+        <ul className='list-unstyled d-flex flex-wrap'>
+          {[
+            Image1,
+            Image2,
+            Image3,
+            Image4,
+            Image5,
+            Image6,
+            Image7,
+            Image8,
+            Image9,
+            Image10,
+          ].map((image, index) => (
+            <li key={index} className='brand-item'>
+              <img
+                src={image}
+                alt={`Brand Image ${index + 1}`}
+                className='brand-image'
+              />
             </li>
-            <li>
-              <img src={Image2} alt='' className='brand-image' />
-            </li>
-            <li>
-              <img src={Image3} alt='' className='brand-image' />
-            </li>
-            <li>
-              <img src={Image4} alt='' className='brand-image' />
-            </li>
-            <li>
-              <img src={Image5} alt='' className='brand-image' />
-            </li>
-            <li>
-              <img src={Image6} alt='' className='brand-image' />
-            </li>
-            <li>
-              <img src={Image7} alt='' className='brand-image' />
-            </li>
-            <li>
-              <img src={Image8} alt='' className='brand-image' />
-            </li>
-            <li>
-              <img src={Image9} alt='' className='brand-image' />
-            </li>
-            <li>
-              <img src={Image10} alt='' className='brand-image' />
-            </li>
-          </ul>
-        </div>
+          ))}
+        </ul>
       </div>
-    </>
+    </div>
   );
 };
 

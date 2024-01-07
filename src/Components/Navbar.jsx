@@ -38,7 +38,7 @@ const Navbar = () => {
             className='collapse navbar-collapse justify-content-center'
             id='navbarNav'
           >
-            <ul className='navbar-nav'>
+            <ul className='navbar-nav '>
               <li className='nav-item'>
                 <select className='nav-link active'>
                   <option>Card access</option>
@@ -73,12 +73,23 @@ const Navbar = () => {
                   Contact
                 </a>
               </li>
+              {/* Move the button inside the navbar for smaller devices */}
+              <li className='nav-item d-lg-none'>
+                <button className='btn'>
+                  Login
+                  <FontAwesomeIcon
+                    icon={faArrowRightToBracket}
+                    className='mx-1'
+                  />
+                </button>
+              </li>
             </ul>
           </div>
-          <div className='d-flex justify-content-end button-custom'>
+          {/* Display the button outside the navbar for larger devices */}
+          <div className='d-none d-lg-flex justify-content-end button-custom'>
             <button className='btn'>
               Login
-              <FontAwesomeIcon icon={faArrowRightToBracket} className='mx-1 ' />
+              <FontAwesomeIcon icon={faArrowRightToBracket} className='mx-1' />
             </button>
           </div>
         </div>
